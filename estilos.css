@@ -1,0 +1,170 @@
+/*Este es un comentario de CSS*/
+/*Los comentarios de CSS no se renderizan en la pÃ¡gina*/
+/*Todas las declaraciones de estilo se encuentran en el CSS, el HTML es para contenido Ãºnicamente*/
+
+/*Reseteo de mÃ¡rgenes de todos los elementos para todos los navegadores*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Importar tipografÃ­a de google fonts vÃ­a @import (sin etiquetas <style>)*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+/*Esto me permite utilizar la tipografÃ­a en todo el contenido de body. Como standard vamos a usar la 100*/
+
+body {
+    /*DeclaraciÃ³n de tipografÃ­a*/
+    font-family: 'Playfair Display', serif;
+    /*DeclaraciÃ³n de peso de TipografÃ­a*/
+    font-weight: 100;
+    /*DeclaraciÃ³n de color de fondo del body*/
+    background-color: whitesmoke;
+    /*DeclaraciÃ³n del color de la tipografÃ­a en el body*/
+    color: white;
+}
+
+/*ESTILOS DE CUADRADOS DE COLORES*/
+
+/*Este es un id Ãºnico en el HTML, representado por #nombre*/
+/*Este color estÃ¡ declarado en #Hex*/
+#color1 {
+    background-color: yellowgreen;
+    transition: background-color .30s;
+}
+#color1:hover {
+  background-color: gold;
+}
+/*Este color estÃ¡ declarado con una palabra clave*/
+#color2 {
+    background-color: yellowgreen;
+    transition: background-color .30s;
+}
+#color2:hover {
+  background-color: gold;
+/*Este color estÃ¡ declarado con valores RGB (XX, XX, XX)*/
+}
+#color3 {
+    background-color: yellowgreen;
+    transition: background-color .30s;
+}
+
+#color3:hover {
+  background-color: gold;
+}
+/*Este color estÃ¡ declarado en RGB, y tiene transparencia de 0.705*/
+#color4 {
+    background-color: yellowgreen;
+    transition: background-color .30s;
+}
+#color4:hover {
+  background-color: gold;
+  }
+
+/*ESTILOS DE BARRA DE NAVEGACIÃ“N*/
+nav {
+    /*Color de texto declarado en #Hex*/
+    color: #ffffff;
+}
+
+/*ESTILOS LINKS EN BARRA DE NAVEGACIÃ“N*/
+nav a{
+    /*Color te texto*/
+    color: black;
+    /*DecoraciÃ³n de texto: subrayado | tachado | etc.*/
+    text-decoration: none;
+    /*TipografÃ­a*/
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    /*Peso de la tipografÃ­a (tiene que estar linkeada la variable)*/
+    font-weight: 700;
+    /*Espaciado interno*/
+    padding: 25px;
+    /*Tiempo de transiciÃ³n animaciones de hover (mirar abajo)*/
+    transition:  color 1s;
+    /*Transformar texto a MayÃºsculas*/
+    text-transform: uppercase;
+}
+
+/*Cambios al pasar el mouse sobre el elemento (hover)*/
+nav a:hover{
+    /*Cambio de color*/
+    color: yellowgreen;
+}
+
+/*ESTILOS LOGO BARRA DE NAVEGACIÃ“N*/
+#logo img{
+    /*Altura de imagen relativa al espacio disponible: "100% del espacio"*/
+    height: 100%;
+    /*Altura mÃ¡xima que puede alcanzar la imagen: 80px*/
+    max-height: 80px;
+    /*Posicionamiento 10px abajo de dÃ³nde deberÃ­a estar*/
+    position: relative;
+    top: 10px;
+}
+
+/*ESTILOS DE BANNER*/
+.banner {
+    /*Imagen de fondo*/
+    background-image: url(media/fondob.jpg);
+    /*PosiciÃ³n del fondo x|y*/
+    background-position: center bottom;
+    /*Â¿Repetir fondo? (tramas)*/
+    background-repeat: no-repeat;
+    /*TamaÃ±o de fondo: cubrir todo el espacio*/
+    background-size: cover;
+    /*Ancho: cubrir el 100%*/
+    width: 100%;
+    /*Alto: cubrir el 100% de la pantalla que o visualiza*/
+    height: 100vh;
+}
+
+
+.banner_info {
+    /*Color de texto*/
+    color: black;
+    /*Centrar texto*/
+    text-align: left;
+    width: 500px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    /*Transformar texto a mayÃºsuclas*/
+    text-transform: uppercase;
+    /*Sombra: offset-x | offset-y | blur-radius | color */
+    /*Espaciado interior*/
+    padding: 0px 0px 240px 0px;
+}
+
+
+
+/*ESTILOS DEL BOTON*/
+.btn {
+    /*Color de fondo*/
+    content: "";
+    background-color: yellowgreen;
+    /*Color de tipografÃ­a*/
+    color: white;
+    /*Decoracion del texto*/
+    text-decoration: none;
+    /*AlineaciÃ³n del texto*/
+    text-align: center;
+    /*Borde redondeado*/
+    border-radius: 20px;
+    /*TamaÃ±o de fuente*/
+    font-size: 0.9rem;
+    margin: 20px 0px 0px 266px;
+    /*PEso de fuente*/
+    font-weight: 100%;
+    /*Espaciado interno*/
+    padding: 7px 10px;
+    /*Cambios al hover por tiempo (1s)*/
+    transition: all 1s ease;
+}
+
+/*Al pasar el mouse por arriba*/
+.btn:hover {
+    /*Cambio de color de fondo*/
+    background-color: goldenrod;
+}
+
+
+/*ESTRUCTURA de la plantilla | Tocar bajo su propio riesgo*/
+.col{display:flex;flex-flow:column nowrap;justify-content:center;align-content:center}.colb{display:flex;flex-flow:column nowrap;justify-content:flex-end;align-content:center}.row{display:flex;flex-flow:row nowrap;justify-content:center;align-content:center}nav{position:absolute;top:0;width:99%}.colores{display:flex;flex-flow:row nowrap;justify-content:left;padding:0px 15px 0px 15px;justify-items: left;}.color{width: 90px;height: 20px;margin: 0px 10px 50px 19px;display:flex;flex-flow:row nowrap;justify-content:center;align-items:center;border-radius: 10px;}h1{margin-bottom:10px}p{margin-bottom:15px;font-weight: 300;}.icon{width:70%}@media only screen and (max-width:600px){nav a{display:none}}
